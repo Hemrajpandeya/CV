@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<script src="content.js"></script>
+<title>Hem Raj Pandeya</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Hem Raj Pandeya</h1>
+        </div>
+    </header>
+<nav id="navbar">
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openTab(event, 'CV')">CV</button>
+    <button class="tablinks" onclick="openTab(event, 'Project')">Projects</button>
+    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+  </div>
+</nav>    
+
+
+<div id="Home" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div class="container">
+    <div class="flex-container">
+      <div class="image">
+        <img class="my-image" src="images/hem.png"  alt="Hem">
+      </div>
+      <div class="myintro">
+        <p >I'm Hem Raj Pandeya, a dedicated mechanical engineer driven by innovation, holding a degree from Tribhuvan University, Pulchowk Campus.</H5> <br></H5> <br>
+
+          In my capstone project, I worked on Eagle Ray, a meticulously designed blended-wing body drone aimed at safeguarding endangered Snow Leopards from poaching. My involvement extended to optimizing the Eagle Ray's aerodynamics, enhancing its efficiency.</H5> <br></H5> <br>
+          
+          Furthermore, I possess extensive experience with drones, utilizing them to collect real-time data from various sensors and generating 3D maps based on parameters like temperature and humidity.</H5> <br></H5> <br>
+          
+          I've contributed my expertise at Prokura Innovations and the National Innovation Centre, where I deepened my knowledge in CAD, simulations, machinery and tool utilization, as well as fabrication processes. These experiences also enhanced my ability to collaborate within a team.</H5> <br></H5> <br>
+          I possess a strong interest in control systems and find myself captivated by various related topics. Outside of my professional pursuits, I enjoy constructing and piloting RC planes. Additionally, I am an avid reader of novels, enthusiastic about hiking, and passionate about cycling.
+          
+          </p>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div id="CV" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+
+  <div class="pdf-container">
+    <p>
+     Click <a href="CV.pdf" target="_blank">here</a> if the page doesn't load.
+    </p>
+    <embed src="CV.pdf" width="90%" height="700px" /> 
+  </div>
+</div>
+
+
+<div id="Writing" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div w3-include-html="writing.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+</div>
+<div id="Project" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div w3-include-html="project.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div w3-include-html="contactme.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html> 
+
